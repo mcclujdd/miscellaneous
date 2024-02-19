@@ -1,7 +1,7 @@
 <?php
 // prime number detection algorithm
 
-function check_primenessfloat $n): bool{
+function check_primality(float $n): bool{
     //check if n/(each number between 2 and sqrt(n)) is int
     assert($n > 1);
     $sqrt_n = floor(sqrt($n));
@@ -20,9 +20,9 @@ function check_primenessfloat $n): bool{
     return 1;
 }
 
-function echo_primeness(float $n): string{
-    global $factor_a, $factor_b; //see comment in check_primeness()
-    if (check_primeness$n)){
+function echo_primality(float $n): string{
+    global $factor_a, $factor_b; //see comment in check_primality()
+    if (check_primality$n)){
         echo "$n is prime.";
     } else {
         echo "$n is NOT prime. It is divisible by $factor_a and $factor_b.";
@@ -30,5 +30,5 @@ function echo_primeness(float $n): string{
 }
 
 
-echo_primeness($n = 59); //should echo "59 is prime."
-echo_primeness($n = 57); //should echo "57 is NOT prime. It is divisible by 3 and 19."
+echo_primality($n = 59); //should echo "59 is prime."
+echo_primality($n = 57); //should echo "57 is NOT prime. It is divisible by 3 and 19."
