@@ -22,7 +22,7 @@ function check_primality(float $n): bool{
 
 function echo_primality(float $n): string{
     global $factor_a, $factor_b; //see comment in check_primality()
-    if (check_primality$n)){
+    if (check_primality($n)){
         echo "$n is prime.";
     } else {
         echo "$n is NOT prime. It is divisible by $factor_a and $factor_b.";
